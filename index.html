@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <title>Hola soy Felipe</title>
 </head>
 <body>
-    <h1>Hola</h1>
-    <h2>CAMBIO IMPORTANTE</h2>
+    <div class="top-bar"></div> <!--Barra morada superior-->
+    
+    <!--Menu de redes sociales-->
+    <nav class="nav-bar">
+        <li><img src="/img/github_felipezapata.svg" alt="github" class="icon"></li>
+        <li><img src="/img/linkedin_felipezapata.svg" alt="linkedin" class="icon"></li>
+        <li><img src="/img/email_felipezapata.svg" alt="mail" class="icon"></li>
+    </nav>
+    <main class="content">
+        <section class="menu">
+            <img src="img/portfolioFelipe.svg" alt="sobre mi" class="mifoto" onclick=sobre_mi()>
+            <h2 id="titulo">Sobre mí</h2>
+            <code>
+                <p onclick=proyectos()><span class="print">print</span>(<span class="codigo">"Proyectos"</span>)</p>
+                <p><span class="print">print</span>(<span class="codigo">"Habilidades"</span>)</p>
+                <p><span class="print">print</span>(<span class="codigo">"Contactame"</span>)</p>
+            </code>
+        </section>
+        <section class="contactame" id="contactame">
+
+        </section>
+        <section class="habilidades" id="habilidades">
+
+        </section>
+        <section class="proyectos" id="proyectos">
+            <div class="cards">
+                <div class="card" id="sinretorno">
+                    <img src="/img/sinretorno_logo.png" alt="">
+                    <h1>Sin retorno</h1>
+                </div>
+                <div class="card">
+                    <h1>Test</h1>
+                </div>
+                <div class="card">
+                    <h1>Test</h1>
+                </div>
+                <div class="card">
+                    <h1>Test</h1>
+                </div>
+                <div class="card">
+                    <h1>Test</h1>
+                </div>
+                <div class="card">
+                    <h1>Test</h1>
+                </div>
+            </div>
+        </section>
+        <section class="me" id="me">
+            <p class="mitexto">¡Hola! Soy Felipe Zapata, un apasionado desarrollador de software con experiencia tanto en el frontend como en el backend.
+                Mi especialización se centra en Python y sus librerías más importantes, donde he desarrollado soluciones eficientes.<br><br>
+                Actualmente, estoy inmerso en el aprendizaje de React para ampliar mis habilidades en el desarrollo de interfaces de usuario dinámicas y modernas.<br>
+                Mi enfoque actual se encuentra en el desarrollo de aplicaciones web, un campo que encuentro fascinante y en constante evolución.
+            </p>
+            <p class="mitexto">
+                ¡Espero poder conectar contigo y ser parte de proyectos desafiantes y gratificantes!
+            </p>
+        </section>
+    </main>  
+    <footer>
+        <p>2024 - felipezapata990@gmail.com</p>
+    </footer>
+    <div class="bottom-bar"></div>
+    <script src="script.js"></script>
 </body>
 </html>
