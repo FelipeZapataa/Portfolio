@@ -123,27 +123,138 @@ footer p {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: auto;
+    max-width: 100%;
+    max-height: 580px;
+    scroll-behavior: smooth; /* Agregar un desplazamiento suave */
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9901ff;
+    border-radius: 5px;
 }
 
 .card {
-    width: 30%;
-    height: 300px;
-    margin-right: 20px;
-    margin-top: 20px;
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: 270px;
+    height: 270px;
     background-color: #131313;
     display: flex;
+    justify-content: end;
     align-items: center;
     color: #000;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 20px 20px 30px 30px;
+    box-shadow: 1px 1px 4px 2px #00af8909;
 }
+
 
 .card  img {
-    width: 70%;
+    width: 40%;
+    margin-bottom: 10%;
 }
 
-.card p {
-    width: 30%;
+
+.card .desarrollo {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 ;
+    margin-bottom: 0;
+}
+
+.card:hover {
+    box-shadow: 2px -2px 7px 3px #00af894b;
+}
+
+.card-content {
+    width: 100%;
+    height: 40%;
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    border-radius: 0 0 20px 20px;
+}
+
+.card-content h2 {
+    margin-bottom: 0;
+}
+
+.card-content p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#k96, #sinretorno  {
+    background-color: #fff;
+}
+
+.modal {
+    border: none;
+    width: 60%;
+    height: 60%;
+    box-shadow: none;
+    padding: 0;
+}
+
+.modal-content {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+
+.modal-description {
+    width: 40%;
+    background-color: #242424;
+    color: #fff;
+}
+
+.modal-page {
+    width: 60%;
+    height: 100%;
+}
+
+.modal-page iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.modal::backdrop {
+    background-color: #0000008c;
+    box-shadow: none;
+}
+
+.modal:focus {
+    outline: none;
+}
+
+.modal-description img {
+    width: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.modal-description h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.modal-description p {
+    padding: 0 20px;
+}
+
+.modal-description ul {
+    padding: 0 12px;
 }
 
 .habilidades {
