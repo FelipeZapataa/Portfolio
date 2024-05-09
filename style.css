@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
-* {
+*, *:focus {
     font-family: "Inconsolata", monospace;
+    outline: none;
+    
 }
 
 html, body {
@@ -257,10 +259,57 @@ footer p {
     padding: 0 12px;
 }
 
-.habilidades {
-    display: none;
+.link {
+    text-decoration: none;
+    padding: 0 20px;
+    color: #d3d3d3;
 }
+
+.habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 60%;
+}
+
+.cuadrilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 100px;
+}
+
+.skills {
+    width: 100px;
+    animation: slideout .5s;
+}
+
+.skills:hover {
+    animation: slidein .5s;
+    transform: translateY(-4px);
+}
+
 
 .contactame {
     display: none;
 }
+
+@keyframes slidein {
+    from {
+      transform: translateY(0%);
+    }
+  
+    to {
+      transform: translateY(-4px);
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      transform: translateY(-4px);
+    }
+  
+    to {
+      transform: translateY(0%);
+    }
+  }
