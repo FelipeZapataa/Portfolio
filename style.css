@@ -266,7 +266,7 @@ footer p {
 }
 
 .habilidades {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: left;
     width: 60%;
