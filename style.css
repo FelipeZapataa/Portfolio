@@ -25,6 +25,16 @@ body {
     list-style: none;
 }
 
+.nav-bar a:hover {
+    animation: slidein .5s;
+    transform: translateY(-4px);
+    fill: #00af89;
+}
+
+path:hover {
+    fill: #00af89;
+}
+
 .icon {
     padding-left: 10px;
     width: 44px;
