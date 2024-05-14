@@ -125,7 +125,6 @@ footer p {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    overflow-y: auto;
     max-width: 100%;
     max-height: 580px;
     scroll-behavior: smooth; /* Agregar un desplazamiento suave */
@@ -154,7 +153,7 @@ footer p {
     color: #000;
     flex-direction: column;
     border-radius: 20px 20px 30px 30px;
-    box-shadow: 1px 1px 4px 2px #00af8909;
+    box-shadow: 1px 1px 4px 2px #a9aaaa0e;
     width: 100px;
     animation: slideout .5s;
     margin: 10px;
@@ -177,7 +176,7 @@ footer p {
 .card:hover {
     animation: slidein .5s;
     transform: translateY(-4px);
-    box-shadow: 2px -2px 7px 3px #00af894b;
+    box-shadow: 1px -1px 7px 1px #a9aaaa4b;
 }
 
 .card-content {
@@ -355,3 +354,8 @@ footer p {
       transform: translateY(0%);
     }
   }
+
+
+.menu-responsive, .titulo-responsive {
+    display: none;
+}

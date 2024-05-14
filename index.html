@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
@@ -30,6 +31,17 @@
                 <!--<p onclick=contactos()><span class="print">print</span>(<span class="codigo">"Contáctame"</span>)</p>-->
             </code>
         </section>
+
+        <section class="menu-responsive">
+            <img src="img/portfolioFelipe.svg" alt="sobre mi" class="mifoto" onclick=sobre_mi()>
+            <div class="menu-responsive-enlaces">
+                    <p onclick=sobre_mi()>Sobre mí</p>
+                    <p onclick=proyectos()>Proyectos</p>
+                    <p onclick=habilidades()>Habilidades</p>
+                    <!--<p onclick=contactos()><span class="print">print</span>(<span class="codigo">"Contáctame"</span>)</p>-->
+            </div>
+        </section>
+        
         <!--
         <section class="contactame" id="contactame">
             <div class="redes">
@@ -59,6 +71,7 @@
         </section>
         -->
         <section class="habilidades" id="habilidades">
+            <h1 class="titulo-responsive">Habilidades</h1>
             <div class="cuadrilla">
                 <img src="img/skills/python.svg" alt="" class="skills">
                 <img src="img/skills/javascript.svg" alt="" class="skills">
@@ -71,6 +84,7 @@
             </div>
         </section>
         <section class="proyectos" id="proyectos">
+            <h1 class="titulo-responsive">Proyectos</h1>
             <div class="cards">
                 <div class="card" id="sinretorno">
                     <img src="img/sinretorno_logo.png" alt="">
@@ -127,7 +141,7 @@
                                     <circle cx="50" cy="50" r="45" fill="#38b6ff" />
                                   </svg>
                             </ul>
-                            <a href="https://https://k96store.com/" target="_blank" class="link" foc>Visita la página web</a>
+                            <a href="https://k96store.com/" target="_blank" class="link" foc>Visita la página web</a>
                         </div>
                         <div class="modal-page">
                             <iframe id="iframe2" frameborder="0" height="100%"></iframe>
@@ -165,7 +179,8 @@
             </div>
         </section>
         <section class="me" id="me">
-            <p class="mitexto">¡Hola! Soy Felipe Zapata, un apasionado desarrollador de software con experiencia tanto en el frontend como en el backend.
+            <h1 class="titulo-responsive">Sobre mí</h1>
+            <p class="mitexto">¡Hola! Soy Felipe Zapata, un apasionado desarrollador de software con experiencia tanto en el frontend como en el backend.<br>
                 Mi especialización se centra en Python y sus librerías más importantes, donde he desarrollado soluciones eficientes.<br><br>
                 
             </p>
