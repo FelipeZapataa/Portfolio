@@ -11,6 +11,9 @@ const modalAbrirK96Store = document.getElementById("k96")
 const modalK96Store = document.getElementById("modal-k96")
 const iframe1 = document.getElementById("iframe1")
 const iframe2 = document.getElementById("iframe2")
+const botonSobremi = document.getElementById("boton-sobremi")
+const botonProyectos = document.getElementById("boton-proyectos")
+const botonHabilidades = document.getElementById("boton-habilidades")
 
 
 function contactos() {
@@ -23,26 +26,41 @@ function contactos() {
 
 function habilidades() {
   titulo.textContent = "Habilidades";
+  botonHabilidades.style.textDecoration = "underline 1px"
+  botonHabilidades.style.color = "#00faA5";
+  botonProyectos.style.textDecoration = "none"
+  botonSobremi.style.textDecoration = "none"
+  botonProyectos.style.color = "#00af89"
+  botonSobremi.style.color = "#00af89"
   proyecto.style.display = "none";
   habilidad.style.display = "flex";
-  sobremi.style.display = "none";
-  contactame.style.display = "none";
+  sobremi.style.display = "none"
 }
 
 function proyectos() {
     titulo.textContent = "Proyectos";
+    botonProyectos.style.textDecoration = "underline 1px"
+    botonProyectos.style.color = "#00faA5";
+    botonHabilidades.style.textDecoration = "none"
+    botonSobremi.style.textDecoration = "none"
+    botonHabilidades.style.color = "#00af89"
+    botonSobremi.style.color = "#00af89"
     proyecto.style.display = "flex";
     habilidad.style.display = "none";
     sobremi.style.display = "none";
-    contactame.style.display = "none";
 }
 
 function sobre_mi() {
     titulo.textContent = "Sobre mí";
+    botonSobremi.style.textDecoration = "underline 1px"
+    botonSobremi.style.color = "#00faA5";
+    botonHabilidades.style.textDecoration = "none"
+    botonProyectos.style.textDecoration = "none"
+    botonHabilidades.style.color = "#00af89"
+    botonProyectos.style.color = "#00af89"
     proyecto.style.display = "none";
     habilidad.style.display = "none";
     sobremi.style.display = "flex";
-    contactame.style.display = "none";
 }
 
 modalAbrirSinRetorno.addEventListener("click", ()=> { 

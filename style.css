@@ -31,10 +31,6 @@ body {
     fill: #00af89;
 }
 
-path:hover {
-    fill: #00af89;
-}
-
 .icon {
     padding-left: 10px;
     width: 44px;
@@ -80,6 +76,11 @@ path:hover {
 
 .codigo {
     color: #00af89;
+}
+
+#boton-sobremi {
+    text-decoration: underline 1px;
+    color: #00faA5;
 }
 
 .me {
